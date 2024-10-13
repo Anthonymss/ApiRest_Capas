@@ -2,15 +2,15 @@ package com.auto.auto.service.impl;
 
 import com.auto.auto.model.entities.Auto;
 import com.auto.auto.repository.AutoRepository;
-import com.auto.auto.service.AutoService;
+import com.auto.auto.service.IAutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
+
 @Service
-public class AutoServiceImpl implements AutoService {
+public class AutoServiceImpl implements IAutoService {
     private final AutoRepository autoRepository;
 
     @Autowired

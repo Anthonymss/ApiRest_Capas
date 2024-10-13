@@ -2,7 +2,7 @@ package com.auto.auto.controller;
 
 import com.auto.auto.exception.ExceptionAuto;
 import com.auto.auto.model.entities.Auto;
-import com.auto.auto.service.AutoService;
+import com.auto.auto.service.IAutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,9 +14,9 @@ import java.util.List;
 @RequestMapping("api/v1/auto")
 @CrossOrigin("*")
 public class AutoController {
-    private final AutoService autoService;
+    private final IAutoService autoService;
     @Autowired
-    public AutoController(AutoService autoService) {
+    public AutoController(IAutoService autoService) {
         this.autoService = autoService;
     }
 
